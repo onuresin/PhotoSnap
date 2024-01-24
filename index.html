@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <script src="assets/js/" defer></script>
+    <script src="assets/js/hamburger.js" defer></script>
     <title>PhotoSnap.com/homepage</title>
 </head>
 <body>
     <div class="container">
         <div class="homeInner">
             <nav class="header">
-                <img src="assets/logos/PhotoSnap.svg" alt="">
+                <a href="/index.html"><img src="assets/logos/PhotoSnap.svg"></a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div id="menu-modal" class="modal">
+                    <div class="modalTop">
+                        <a href="/index.html"><img src="assets/logos/PhotoSnap.svg"></a>
+                        <img src="assets/logos/cross.svg">
+                    </div>
+                    <div class="modalMid">
+                        <a href="stories.html">Hikayeler</a>
+                        <a href="features.html">Özellikler</a>
+                        <a href="pricing.html">Fiyatlandırma</a>
+                    </div>
+                    <div class="modalBot">
+                        <button><a href="#">Davet Linki Al</a></button>
+                    </div>
+                </div>
             </nav>
             <div class="detailSection">
 

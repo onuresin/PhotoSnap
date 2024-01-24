@@ -1,8 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
-:root {
-    --PureBlack: #0000;
-    --LightGrey: #DFDFDF;
-    --PureWhite: #FFF;
-}
 
 body {font-family: 'DM Sans', sans-serif;}
+/*MOBILE TASARIM KODLARI*/
+.homeInner {
+    width: 375px;
+    margin: 0 auto;
+}
+/*HEADER SECTION*/
+.header {
+    display: flex;
+    padding-block: 28px;
+    justify-content: space-between;
+}
+/*MODAL _ HAMBURGER */
+.hamburger {
+    position: relative;
+  }
+  .bar {
+    display: block;
+    width: 20px;
+    height: 5px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger .bar:nth-child(3) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    opacity: 1;
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+  }
+  .hamburger.active + .modal {
+    display: block;
+    z-index: 999;
+  } 
+  .modal.active {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 200px;
+    width: 375px;
+    margin: 0 auto;
+
+  }
+  .modal-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
