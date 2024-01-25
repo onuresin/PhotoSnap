@@ -202,7 +202,6 @@ body, html {
     height: auto;
 }
 .topContent {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0.27%, rgba(0, 0, 0, 0.66) 100%);
     position: relative;
     z-index: 1;
   
@@ -215,11 +214,12 @@ body, html {
     justify-content: center;
     gap: 16px;
     padding-inline: 33px;
+    z-index: 3;
     & h4 {
         color: #fff;
         font-size: 18px;
         font-weight: 700;
-        line-height: 25px; /* 138.889% */ 
+        line-height: 25px; 
     }
     & h5 {
         color: #fff;
@@ -243,6 +243,16 @@ body, html {
         }
     }
    }
+}
+.topContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0.27%, rgba(0, 0, 0, 0.66) 100%);
+  z-index: 2; /* Resmin üzerinde olmalı, bu nedenle z-index değeri resmininkinden daha yüksek olmalı */
 }
 /*********************************************************************/
 /*limitsEmbedSection*/
@@ -278,5 +288,73 @@ body, html {
     font-size: 15px;
     font-weight: 400;
     line-height: 25px; /* 166.667% */ 
+  }
+}
+/*********************************************************************/
+/*FOOTER SECTION*/
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 119px;
+  padding: 56px 102px;
+  background-color: black;
+}
+/*ICONLAR CSS RENKLENDİRME*/
+.fa-brands.fa-square-facebook, .fa-brands.fa-youtube, .fa-brands.fa-x-twitter, .fa-brands.fa-pinterest, .fa-brands.fa-instagram{
+  color: white;
+}
+/****/
+.ftopSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.socialMedia {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding-inline: 8px;
+}
+.footerLinks {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 19px;
+  & li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+  }
+}
+.linkFooter {
+  border: 0;
+  background-color: transparent;
+  & a {
+    display: flex;
+    gap: 22px;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+}
+.fbotSection {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  align-items: center;
+  & h5 {
+    color: #fff;
+    opacity: 0.5025;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal; 
+    white-space: nowrap;
   }
 }
