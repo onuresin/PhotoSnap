@@ -3,9 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/stories.css">
+    <script src="assets/js/hamburger.js" defer></script>
+    <script src="https://kit.fontawesome.com/166901f98c.js" crossorigin="anonymous"></script>
     <title>PhotoSnap.com/stories</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="storiesInner">
+            <nav class="header">
+                <a href="/index.html"><img src="assets/logos/PhotoSnap.svg"></a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div id="menu-modal" class="modal">
+                    <div class="modalTop">
+                        <a href="/index.html"><img src="assets/logos/PhotoSnap.svg"></a>
+                        <img src="assets/logos/cross.svg">
+                    </div>
+                    <div class="modalMid">
+                        <a href="stories.html">Hikayeler</a>
+                        <a href="features.html">Özellikler</a>
+                        <a href="pricing.html">Fiyatlandırma</a>
+                        <img src="assets/images/stick.svg" alt="rectangle">
+                    </div>
+                    <div class="modalBot">
+                        <button><a href="#">Davet Linki Al</a></button>
+                    </div>
+                </div>
+            </nav>
+            <div class="storiesContent">
+                <img src="assets/images/stories.svg">
+                <div class="storiesText">
+                    <span class="textTop">
+                        <h3>Geçen Ayın Öne Çıkan Hikayesi</h3>
+                        <h2>APPALACHIA'NIN PUSLU DOLUNAYI</h2>
+                        <span class="textTopInside">
+                            <h5>John Appleseed tarafından</h5> <p>Aralık 12 2023</p>
+                        </span>
+                        
+                    </span>
+                    <span class="textBot">
+                        <h5>Parçalanmış plato bölgesi, jeolojik anlamda dağlardan oluşmasa da, özellikle doğu Kentucky ve Batı Virginia'da halk arasında "dağlar" olarak bilinir. Sırtlar belki yüksek değildir, ancak arazi son derece zorlu ve engebelidir.</h5>
+                        <button><a href="#">Davet Linki Al <img src="assets/images/right-arrow.svg"></a></button>
+                    </span>
+                </div>
+            </div>
+            <div class="storiesGrid">
+                <div class="gridTop">
+                    <div class="topLeft">
+                        <div class="topContent">
+                            <img src="assets/images/mobile-image-4.svg">
+                            <div class="contentText">
+                                <span>
+                                    <h5>John Appleseed tarafından</h5>
+                                    <h4>Dağlar</h4>
+                                </span>
+                                <img src="assets/images/stick-gray.svg">
+                                <button class="contentbtn"><a href="#">Hikayeyi Oku <img src="assets/images/right-arrow.svg"></a></button>
+                            </div>
+                        </div>
+                        <div class="topContent">
+                            <img src="assets/images/mobile-image-5.svg">
+                            <div class="contentText">
+                                <span>
+                                    <h5>Benjamin Cruz tarafından</h5>
+                                    <h4>Gün Batımı Şehir Manzaraları</h4>
+                                </span>
+                                <img src="assets/images/stick-gray.svg">
+                                <button class="contentbtn"><a href="#">Hikayeyi Oku <img src="assets/images/right-arrow.svg"></a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topRight">
+                        <div class="topContent">
+                            <img src="assets/images/mobile-image-6.svg">
+                            <div class="contentText">
+                                <span>
+                                    <h5>Alexei Borodin tarafından</h5>
+                                    <h4>18 Günlük Yolculuk</h4>
+                                </span>
+                                <img src="assets/images/stick-gray.svg">
+                                <button class="contentbtn"><a href="#">Hikayeyi Oku <img src="assets/images/right-arrow.svg"></a></button>
+                            </div>
+                        </div>
+                        <div class="topContent">
+                            <img src="assets/images/mobile-image-7.svg">
+                            <div class="contentText">
+                                <span>
+                                    <h5>Samantha Brooke tarafından</h5>
+                                    <h4>Mimari</h4>
+                                </span>
+                                <img src="assets/images/stick-gray.svg">
+                                <button class="contentbtn"><a href="#">Hikayeyi Oku <img src="assets/images/right-arrow.svg"></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footerSection">
+            <div class="ftopSection">
+                <a href="index.html"><img src="assets/logos/photosnap-white.svg"></a>
+                <ul class="socialMedia">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+                    <li><a href="https://www.x.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"></i></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest fa-xl"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                </ul>
+                <span >
+                    <ul class="footerLinks">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="stories.html">Hikayeler</a></li>
+                        <li><a href="pricing.html">Fiyatlandırma</a></li>
+                        <li><a href="features.html">Özellikler</a></li>
+                    </ul>
+                </span>
+            </div>
+            <div class="fbotSection">
+                <button class="linkFooter"><a href="#">Davet Linki Al <img src="assets/images/right-arrow.svg"></a></button>
+                <h5>Telif Hakkı 2024. Tüm Hakları Saklıdır</h5>
+            </div>
+        </footer> 
+    </div>
 </body>
 </html>
