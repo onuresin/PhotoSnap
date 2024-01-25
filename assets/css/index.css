@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
 
 body {font-family: 'DM Sans', sans-serif;}
+body, html {
+    height: 100%;
+    margin: 0;
+}
 /*MOBILE TASARIM KODLARI*/
 .homeInner {
     width: 375px;
@@ -134,17 +138,21 @@ body {font-family: 'DM Sans', sans-serif;}
 .getLink {
     background-color: black;
     border: 0;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    display: flex;
     margin-top: 7px;
-    & img {
-        width: 42px;
+    & a {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2px; 
+        text-transform: uppercase; 
+        display: flex;
+        text-decoration: none;
+        & img {
+            width: 42px;
+        }
     }
+    
 }
 .twoTextInner {
     width: 318px;
@@ -169,17 +177,70 @@ body {font-family: 'DM Sans', sans-serif;}
 }
 .getLinkWhite {
     border: 0;
-    color: black;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    display: flex;
-    gap: 26px;
     margin-top: 7px;
     background-color: transparent;
-    & img {
-        width: 42px;
+    & a {
+        color: black;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2px; 
+        text-transform: uppercase;
+        text-decoration: none; 
+        display: flex;
+    gap: 26px;
+        & img {
+            width: 42px;
+        }
     }
+}
+/******************/
+/**SPEC SECTION**/
+.specTop {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.topContent {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0.27%, rgba(0, 0, 0, 0.66) 100%);
+    position: relative;
+    z-index: 1;
+  
+   & .contentText {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 16px;
+    padding-inline: 33px;
+    & h4 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px; /* 138.889% */ 
+    }
+    & h5 {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: normal; 
+    }
+    & .contentbtn {
+        background-color: transparent;
+        border: 0;
+        & a {
+            display: flex;
+            gap: 160px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2px; 
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+   }
 }
