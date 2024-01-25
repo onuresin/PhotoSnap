@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/pricing.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/hamburger.js" defer></script>
+    <script src="assets/js/priceSwitcher.js" defer></script>
     <title>PhotoSnap.com/pricing</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="pricingInner">
+            <nav class="header">
+                <a href="/index.html"><img src="assets/logos/PhotoSnap.svg"></a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div id="menu-modal" class="modal">
+                    <div class="modalTop">
+                        <a href="/index.html"><img src="assets/logos/PhotoSnap.svg"></a>
+                        <img src="assets/logos/cross.svg">
+                    </div>
+                    <div class="modalMid">
+                        <a href="stories.html">Hikayeler</a>
+                        <a href="features.html">Özellikler</a>
+                        <a href="pricing.html">Fiyatlandırma</a>
+                        <img src="assets/images/stick.svg" alt="rectangle">
+                    </div>
+                    <div class="modalBot">
+                        <button><a href="#">Davet Linki Al</a></button>
+                    </div>
+                </div>
+            </nav>
+            <div class="pricingTitle">
+                <img src="assets/images/pricing-img.svg">
+                <div class="mobileOneFeatures">
+                    <img src="assets/images/stick-gradient.svg">
+                    <div class="featuresTextDetails">
+                        <h4>Fiyatlandırma</h4>
+                        <h5>Hikayelerinizi oluşturun, Photosnap fotoğrafçılar ve görsel hikaye anlatıcıları için bir platformdur. Fotoğraflarınızı oluşturmanın ve paylaşmanın basit bir yoludur.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="priceTables">
+                <div class="priceSwitcher">
+                    <h5 class="monthly"  onclick="switchToMonthly()">Aylık</h5>
+                    <img src="assets/logos/month.svg" id="monthlySwitch" onclick="switchToYearly()">
+                    <img src="assets/logos/year.svg" id="yearlySwitch" onclick="switchToMonthly()" style="display: none;">
+                    <h5 class="yearly" onclick="switchToYearly()">Yıllık</h5>
+                </div>
+                <div class="monthlyPriceSection">
+                    <div class="basicPlan">
+                        <span class="basicSpecs">
+                            <h4>Temel</h4>
+                            <h5>Platformumuzun temel kullanımını içerir. Yeni ve hevesli fotoğrafçılar için önerilir.</h5>
+                        </span>
+                        <span class="basicPrice">
+                            <h4>150₺</h4>
+                            <h5>/ her ay</h5>
+                        </span>
+                        <button><a href="#">Planı Seç</a></button>
+                    </div>
+                    <div class="basicPlanBlack">
+                        <img src="assets/images/plan-stick.png">
+                        <div class="blacked">
+                            <span class="basicSpecs">
+                                <h4>Pro</h4>
+                                <h5>Daha gelişmiş özellikler mevcut. Fotoğrafçılık uzmanları ve profesyoneller için önerilir.</h5>
+                            </span>
+                            <span class="basicPrice">
+                                <h4>350₺</h4>
+                                <h5>/ her ay</h5>
+                            </span>
+                            <button><a href="#">Planı Seç</a></button>
+                        </div>
+                    </div>
+                    <div class="basicPlan">
+                        <span class="basicSpecs">
+                            <h4>İşletme</h4>
+                            <h5>Daha ayrıntılı ölçümler vs gibi ek özellikler mevcuttur. İşletme sahipleri için önerilir.</h5>
+                        </span>
+                        <span class="basicPrice">
+                            <h4>999₺</h4>
+                            <h5>/ her ay</h5>
+                        </span>
+                        <button><a href="#">Planı Seç</a></button>
+                    </div>
+                </div>
+                <div class="yearlyPriceSection" style="display: none;">
+                    <div class="basicPlan">
+                        <span class="basicSpecs">
+                            <h4>Temel</h4>
+                            <h5>Platformumuzun temel kullanımını içerir. Yeni ve hevesli fotoğrafçılar için önerilir.</h5>
+                        </span>
+                        <span class="basicPrice">
+                            <h4>1550₺</h4>
+                            <h5>/ yıllık ücret</h5>
+                        </span>
+                        <button><a href="#">Planı Seç</a></button>
+                    </div>
+                    <div class="basicPlanBlack">
+                        <img src="assets/images/plan-stick.png">
+                        <div class="blacked">
+                            <span class="basicSpecs">
+                                <h4>Pro</h4>
+                                <h5>Daha gelişmiş özellikler mevcut. Fotoğrafçılık uzmanları ve profesyoneller için önerilir.</h5>
+                            </span>
+                            <span class="basicPrice">
+                                <h4>2700₺</h4>
+                                <h5>/ yıllık ücret</h5>
+                            </span>
+                            <button><a href="#">Planı Seç</a></button>
+                        </div>
+                    </div>
+                    <div class="basicPlan">
+                        <span class="basicSpecs">
+                            <h4>İşletme</h4>
+                            <h5>Daha ayrıntılı ölçümler vs gibi ek özellikler mevcuttur. İşletme sahipleri için önerilir.</h5>
+                        </span>
+                        <span class="basicPrice">
+                            <h4>8450₺</h4>
+                            <h5>/ yıllık ücret</h5>
+                        </span>
+                        <button><a href="#">Planı Seç</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
