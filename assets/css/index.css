@@ -17,7 +17,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
 }
-.headerNavigatorResponsive, .navigatorResponsive { display: none;}
+.headerNavigatorResponsive, .navigatorResponsive, .tabletTopContent { display: none;}
 /*MODAL _ HAMBURGER */
 .hamburger {
     position: relative;
@@ -415,8 +415,8 @@ body, html {
       white-space: nowrap;
     }
   }
-  .mobileSet {display: none;}
-  .tabletSet {display: block;}
+  .mobileSet, .mobileTopContent {display: none;}
+  .tabletSet, .tabletTopContent {display: block;}
   .detailMobileOne {
     max-width: 768px;
     display: flex;
@@ -454,5 +454,43 @@ body, html {
     & img {
       height: auto;
     }
+  }
+  .detailMobileTwo {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+  }
+  .mobileTwoText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .twoTextInner {
+        gap: 21px;
+      & h4 {
+        font-size: 40px; 
+        letter-spacing: 4.167px; 
+        line-height: 48px; /* 120% */ 
+      }
+    }
+  }
+  .getLinkWhite {gap: 27px;}
+  .detailMobileThree {
+    flex-direction: row-reverse;
+
+  }
+  .mobileThreeText {
+    width: 387px;
+  }
+  .specSection {
+    max-width: 768px;
+  }
+  .specTop, .specBot {
+    display: flex;
+    flex-direction: row;
+  }
+  .embedInner {
+    gap: 80px;
+    padding: 120px 155px ;
   }
 }
