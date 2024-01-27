@@ -17,7 +17,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
 }
-.headerNavigatorResponsive, .navigatorResponsive, .tabletTopContent { display: none;}
+.headerNavigatorResponsive, .navigatorResponsive, .tabletTopContent, .webSet, .webLinear { display: none;}
 /*MODAL _ HAMBURGER */
 .hamburger {
     position: relative;
@@ -383,7 +383,7 @@ body, html {
 
 /***RESPONSIVE****/
 /****TABLET*****/
-@media (450px <= width <= 768px) {
+@media (400px <= width <= 768px) {
   .homeInner {
     max-width: 768px;
   }
@@ -421,7 +421,7 @@ body, html {
       white-space: nowrap;
     }
   }
-  .mobileSet, .mobileTopContent {display: none;}
+  .mobileSet, .mobileTopContent, .webLinear {display: none;}
   .tabletSet, .tabletTopContent {display: block;}
   .detailMobileOne {
     max-width: 768px;
@@ -526,16 +526,18 @@ body, html {
 }
 /**************************************/
 /**WEB RESPONSIVE**/
-@media (min-width:900px) {
+@media (min-width:769px) {
+  body {background-color: #f1f1f1;}
   .homeInner {
-    min-width: 900px;
+    max-width: 1440px;
   }
   .header {
+    background-color: #fff;
     width: 100%;
     padding: 28px 165px;
   }
-  .hamburger {display: none;}
-  .headerNavigatorResponsive, .navigatorResponsive { display: block;}
+  .hamburger, .tabletSet, .mobileSet{display: none;}
+  .headerNavigatorResponsive, .navigatorResponsive, .webSet { display: block;}
   .headerNavigatorResponsive {
     display: flex;
     gap: 37px;
@@ -578,6 +580,131 @@ body, html {
     & a {
       color: black;
       cursor: url(/assets/images/pointer.svg), auto;
+    }
+  }
+  .navigatorResponsive button:active {
+    transform: translateY(4px);
+  }
+  .header a:hover{
+    cursor: url(/assets/images/pointer.svg), auto;
+  }
+  /***********HEADER END**********/
+  .detailMobileOne {
+    max-width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .mobileOneText {
+    width: 610px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    & img {
+      width: 6px;
+      margin-left: 0;
+      height: 320px;
+    }
+  }
+  .tabletSet {
+    max-width: 273px;
+  }
+  .textDetails {
+    width: auto;
+    height: auto;
+    gap: 21px;
+    & h4 {
+      font-size: 40px; 
+      letter-spacing: 4.167px; 
+    }
+  
+  }
+  .getLink {
+    padding-top: 27px;
+    width: 108px;
+    transition: ease-out 1s;
+  }
+  .getLinkWhite {
+    width: 108px;
+    & a {
+      white-space: nowrap;
+    }
+  }
+  .getLink a {
+    gap: 18px;
+    white-space: nowrap;
+    & img {
+      height: auto;
+    }
+  }
+  .getLinkWhite:active {
+    transform: translateY(3px);
+  }
+  .getLink a:hover {
+    cursor: url(/assets/images/pointer.svg), auto;
+    border-bottom: 1px solid #FFFFFF;
+    transition: ease-out 2s;
+  }
+  .getLink:active {
+    transform: translateY(3px);
+  }
+  .getLinkWhite a:hover {
+    cursor: url(/assets/images/pointer.svg), auto;
+    border-bottom: 1px solid black;
+  }
+  .detailMobileTwo {
+    display: flex;
+    flex-direction: row;
+  }
+  .mobileTwoText {
+    display: flex;
+    flex-direction: column;
+    padding: 112px 116px;
+    & .twoTextInner {
+        gap: 21px;
+      & h4 {
+        font-size: 40px; 
+        letter-spacing: 4.167px; 
+        line-height: 48px; /* 120% */ 
+      }
+    }
+  }
+  .getLinkWhite {gap: 27px;}
+  .detailMobileThree {
+    flex-direction: row-reverse;
+  }
+  .twoTextInner {
+    padding-block: 0;
+  }
+  .threeTextInner {
+    width: 387px;
+  }
+  /****SPEC****/
+  .specSection {
+    display: flex;
+    flex-direction: row;
+  }
+  .specTop, .specBot {
+    display: flex;
+    flex-direction: row;
+  }
+  .mobileTopContent {display: none;}
+  .tabletTopContent {display: block;}
+  .contentbtn {
+    white-space: nowrap;
+  }
+  .topContent:hover {
+    transition: ease 1.5s;
+    transform: translateY(-20px);
+    cursor: url(/assets/images/pointer.svg), auto;
+    & a {
+      cursor: url(/assets/images/pointer.svg), auto
+    }
+    & .webLinear {
+      display: block;
+      width: 100%;
+      background: linear-gradient(27deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+      height: 3px;
+      position: absolute;
     }
   }
 }
