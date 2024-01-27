@@ -209,6 +209,7 @@ body, html {
   background-color: #fff;
   opacity: 0.2;
 }
+.tabletSet{display: none;}
 /******************/
 /**SPEC SECTION**/
 .specTop {
@@ -378,14 +379,16 @@ body, html {
 /****TABLET*****/
 @media (450px <= width <= 768px) {
   .homeInner {
-    width: 768px;
+    max-width: 768px;
   }
+  .header {width: 100%;}
   .hamburger {display: none;}
   .headerNavigatorResponsive, .navigatorResponsive { display: block;}
   .headerNavigatorResponsive {
     display: flex;
     gap: 37px;
     align-items: center;
+    margin-left: 41px;
     & a {
       color: black;
       text-decoration: none;
@@ -400,8 +403,7 @@ body, html {
     border: 0;
     background-color: black;
     padding: 12px 24px;
-    margin-left: 50px;
-    
+    margin-left: 51px;
     & a {
       color: white;
       text-transform: uppercase;
@@ -411,6 +413,46 @@ body, html {
       line-height: normal;
       letter-spacing: 2px; 
       white-space: nowrap;
+    }
+  }
+  .mobileSet {display: none;}
+  .tabletSet {display: block;}
+  .detailMobileOne {
+    max-width: 768px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .mobileOneText {
+    width: 495px;
+    gap: 52px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    & img {
+      width: 6px;
+      margin-left: 0;
+      height: 325px;
+    }
+  }
+  .tabletSet {
+    max-width: 273px;
+  }
+  .textDetails {
+    width: auto;
+    height: auto;
+    gap: 21px;
+    & h4 {
+      font-size: 40px; 
+      letter-spacing: 4.167px; 
+    }
+  }
+  .getLink {
+    padding-top: 27px;
+  }
+  .getLink a {
+    gap: 18px;
+    & img {
+      height: auto;
     }
   }
 }
