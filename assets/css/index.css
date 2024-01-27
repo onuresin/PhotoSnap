@@ -314,6 +314,7 @@ body, html {
   gap: 119px;
   padding: 56px 102px;
   background-color: black;
+  align-items: center;
 }
 /*ICONLAR CSS RENKLENDİRME*/
 .fa-brands.fa-square-facebook, .fa-brands.fa-youtube, .fa-brands.fa-x-twitter, .fa-brands.fa-pinterest, .fa-brands.fa-instagram{
@@ -321,6 +322,11 @@ body, html {
 }
 /****/
 .ftopSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.ftopRotate {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -493,4 +499,28 @@ body, html {
     gap: 80px;
     padding: 120px 155px ;
   }
+  .footerSection {
+    flex-direction: row;
+    padding: 64px 40px;
+    width: auto;
+  }
+  .ftopRotate {
+    flex-direction: column-reverse;
+    width: 313px;
+    gap: 72px;
+  }
+  .socialMedia {
+    gap: 26px;
+  }
+  .footerLinks {
+    flex-direction: row;
+    white-space: nowrap;
+  }
+  .ftopSection {gap: 0;}
+  .fbotSection {
+    width: 255px;
+    align-items: end;
+    gap: 120px;
+  }
+  .linkFooter { width: 166px;}
 }
