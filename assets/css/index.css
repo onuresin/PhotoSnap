@@ -524,3 +524,60 @@ body, html {
   }
   .linkFooter { width: 166px;}
 }
+/**************************************/
+/**WEB RESPONSIVE**/
+@media (min-width:900px) {
+  .homeInner {
+    min-width: 900px;
+  }
+  .header {
+    width: 100%;
+    padding: 28px 165px;
+  }
+  .hamburger {display: none;}
+  .headerNavigatorResponsive, .navigatorResponsive { display: block;}
+  .headerNavigatorResponsive {
+    display: flex;
+    gap: 37px;
+    align-items: center;
+    margin-left: 41px;
+    & a {
+      color: black;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2px; 
+      text-transform: uppercase;
+    }
+  }
+  .headerNavigatorResponsive a:hover {
+    cursor: url(/assets/images/pointer.svg), auto;
+    opacity: 0.3;
+  }
+  .navigatorResponsive button {
+    border: 0;
+    background-color: black;
+    padding: 12px 24px;
+    margin-left: 51px;
+    & a {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2px; 
+      white-space: nowrap;
+    }
+  }
+  .navigatorResponsive button:hover {
+    transition: linear 0.3s;
+    background-color: #DFDFDF;
+    cursor: url(/assets/images/pointer.svg), auto;
+    & a {
+      color: black;
+      cursor: url(/assets/images/pointer.svg), auto;
+    }
+  }
+}
