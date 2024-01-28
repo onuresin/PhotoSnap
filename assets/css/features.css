@@ -130,3 +130,62 @@
     }
     
   }
+  @media (min-width:769px) {
+    .featuresMobil, .featuresTablet  {display: none;}
+    .featuresWeb {display: block;}
+    .featuresTitle {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1440px;
+        margin: 0 auto;
+    }
+    .mobileOneFeatures {
+        width: 610px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 106px;
+        & .featuresTablet {
+            width: 6px;
+            margin-left: 0;
+        }
+    }
+    .featuresTextDetails {
+        margin: 0;
+        width: 387px;
+    }
+    .embedInner {
+        display: grid;
+        width: 1440px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 106px;
+        padding: 160px 106px;
+    }
+    .bonusFooter {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    .bonusFooter {
+        & span {
+            flex-direction: row;
+            align-items: center;
+            gap: 522px;
+        }
+        & .bonusContent {
+
+            position: absolute;
+            flex-direction: row;
+            padding-inline: 0;
+            gap: 33px;
+            align-items: center;
+        }
+        .featuresStick {
+            height: 281px;
+        }
+        
+    }
+    
+  }
