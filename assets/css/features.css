@@ -1,3 +1,4 @@
+.featuresTablet, .featuresWeb {display: none;}
 .mobileOneFeatures {
     background-color: black;
     display: flex;
@@ -74,4 +75,58 @@
             }
         }
     }
+  }
+  /*****************************************/
+  /**RESPONSIVE TABLET****/
+  @media(400px <= width <= 768px) {
+    .featuresMobil, .featuresWeb {display: none;}
+    .featuresTablet {display: block;}
+    .featuresTitle {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .mobileOneFeatures {
+        width: 495px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 48px;
+        & .featuresTablet {
+            width: 6px;
+            margin-left: 0;
+        }
+    }
+    .featuresTextDetails {
+        margin: 0;
+        width: 387px;
+        
+    }
+    .embedInner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 sütunlu grid */
+        padding: 112px 38px 112px 37px;
+        gap: 21px;
+    }
+    .embedSection {
+        margin-top: 81px;
+    }
+    .bonusFooter {
+        & span {
+            flex-direction: row;
+        }
+        & .bonusContent {
+
+            position: absolute;
+            flex-direction: row;
+            padding-inline: 0;
+            gap: 33px;
+            align-items: center;
+        }
+        .featuresStick {
+            height: 280px;
+        }
+        
+    }
+    
   }
