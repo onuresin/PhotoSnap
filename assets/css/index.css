@@ -390,7 +390,10 @@ color: white;}
   .homeInner {
     max-width: 768px;
   }
-  .header {width: 100%;}
+  .header {
+    max-width: 768px;
+    margin: 0 auto;
+  }
   .hamburger, .footerLinksWeb {display: none;}
   .headerNavigatorResponsive, .navigatorResponsive { display: block;}
   .headerNavigatorResponsive {
@@ -536,7 +539,8 @@ color: white;}
   }
   .header {
     background-color: #fff;
-    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 28px 165px;
   }
   .hamburger, .tabletSet, .mobileSet, .footerLinks{display: none;}
@@ -716,10 +720,10 @@ color: white;}
     gap: 30px;
   }
   .footerSection {
-    width: 1104px;
+    width: 1440px;
+    margin: 0 auto;
     flex-direction: row;
     padding: 64px 165px;
-    width: auto;
   }
   .ftopRotate {
     flex-direction: column-reverse;

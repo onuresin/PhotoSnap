@@ -16,7 +16,6 @@ function switchToYearly () {
     document.querySelector('.monthlyPriceSection').style.display = 'none';
     document.querySelector('.yearlyPriceSection').style.display = 'block';
     document.querySelector('.monthly').style.opacity = 0.5;
-  document.querySelector('.yearly').style.opacity = 1;
+    document.querySelector('.yearly').style.opacity = 1;
 }
-
 document.addEventListener('DOMContentLoaded', init);

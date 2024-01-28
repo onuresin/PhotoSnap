@@ -1,3 +1,4 @@
+.tabletStory{display: none;}
 .storiesText {
     background-color: black;
     padding: 48px 29px;
@@ -135,4 +136,80 @@
     height: 2px;
     background-color: #fff;
     opacity: 0.2;
+}
+/*******************************************/
+/*RESPONSIVE TABLET*/
+@media (400px <= width <= 768px) {
+    .sMobil, .mobileStory {
+        display: none;
+    }
+    .tabletStory{display: block;}
+    .storiesContent {
+        background-image: url(/assets/tablet/stories-tablet.png);
+        margin: 0;
+        padding: 0;
+        background-size: cover; /* Görüntüyü tamamen kaplaması için */
+        max-width: 768px ;
+    }
+    .storiesText {
+        max-width: 419px;
+        padding-block:152px 122px ;
+        background-color: transparent;
+        & .textTop {
+           & h2 {
+                font-size: 40px;
+                line-height: 48px; /* 120% */
+                letter-spacing: 4.167px;    
+            }
+        }
+    }
+    .storiesGrid {
+        display: grid;
+        grid-template-areas: 'gridTop' 'gridMid' 'gridgridBot' 'gridgridBott';
+    }
+    
+.gridTop {
+    grid-area: gridTop;
+}
+    .topLeft, .topRight {
+        display: flex;
+        max-width: 768px;
+    }
+}
+
+/************************************************/
+/*RESPONSIVE WEB*/
+@media (min-width:769px) {
+    .sMobil, .mobileStory {
+        display: none;
+    }
+    .tabletStory{display: block;}
+    .storiesContent {
+        background-image: url(/assets/web/stories-web.png);
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        width: 1440px;
+        margin: 0 auto;
+    } 
+    .storiesText {
+        max-width: 720px;
+        padding: 122px 221px 122px 112px;
+        padding-block:152px 122px ;
+        background: radial-gradient(94.05% 94.05% at 0% 100%, #FFC593 0%, rgba(188, 113, 152, 0.50) 52.36%, rgba(90, 119, 255, 0.00) 100%); 
+        position: relative;
+    }
+    .storiesGrid {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .gridTop, .gridMid, .gridBot, .gridBott {
+        display: flex;
+        flex-direction: row;
+    }
+    .topLeft, .topRight {
+        display: flex;
+        flex-direction: row;
+    }
 }
