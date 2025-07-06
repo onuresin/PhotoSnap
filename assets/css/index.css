@@ -761,6 +761,7 @@ body {background-color: #f1f1f1;}
         max-width: 1440px;
         flex-direction: row;
         padding: 64px 165px;
+        margin: 0 auto;
     }
     .ftopRotate {
         flex-direction: column-reverse;

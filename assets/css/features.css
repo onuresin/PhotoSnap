@@ -157,10 +157,11 @@
     }
     .embedInner {
         display: grid;
-        width: 1440px;
+        width: 100%;
+        max-width: 1440px;
         margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-gap: 106px;
         padding: 160px 106px;
     }

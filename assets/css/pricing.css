@@ -1,97 +1,82 @@
+.pricingInner {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+}
 .mobileOneFeatures {
     background-color: black;
     display: flex;
     flex-direction: column;
     gap: 66px;
     height: 300px;
-    & img {
-        width: 128px;
-        margin-left: 33px;
-    }
   }
-
+  .mobileOneFeatures img {
+    width: 34.13%;
+    margin-left: 33px;
+}
+.tab-desk-button, .tab-desktop {
+    display: none;
+}
 .featuresTextDetails {
-    width: 318px;
+    width: 85%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    & h4 {
-        color: #fff;
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 40px; /* 125% */
-        letter-spacing: 3.333px;
-        text-transform: uppercase; 
-    }
-    & h5 {
-        color: #fff;
-        opacity: 0.6;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 25px; /* 166.667% */ 
-    }
   }
-  .bonusFooter {
+.featuresTextDetails h4 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+    letter-spacing: 3.333px;
+    text-transform: uppercase;     
+}
+.featuresTextDetails h5 {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */ 
+}
+.bonusFooter {
     position: relative;
     z-index: 1;
-    & .bonusContent {
-        position: absolute;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        gap: 66px;
-        padding-inline: 33px;
-        z-index: 3;
-    }
-    & span {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        & h4 {
-            color: #fff;
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 40px; /* 125% */
-            letter-spacing: 3.333px;
-            text-transform: uppercase; 
-        }
-        & button {
-            background-color: transparent;
-            border: 0;
-            & a {
-                display: flex;
-                gap: 16px;
-                text-decoration: none;
-                color: #fff;
-                text-transform: uppercase;
-                font-size: 12px;
-                font-weight: 700;
-                line-height: normal;
-                letter-spacing: 2px; 
-            }
-        }
-    }
-  }
-/****PRICE TABLE ****/
+}
+
+.bonusFooter .bonusContent {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 66px;
+    padding-inline: 33px;
+    z-index: 3;
+}
+.bonus-bg-tab-desk {display: none;}
+
+/* PRICE TABLE */
+
 .priceTables {
     padding: 64px 32px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
+
 .priceSwitcher {
     display: flex;
     gap: 32px;
     width: 318px;
     justify-content: center;
-    & h5 {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 25px; /* 138.889% */   
-    }
+}
+
+.priceSwitcher h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px; /* 138.889% */
 }
 .monthly {
     opacity: 1;
@@ -105,160 +90,379 @@
     gap: 40px;
     padding: 56px 22px 40px 21px;
     background-color: #F5F5F5;
-    & .basicSpecs {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        & h4 {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 25px; /* 104.167% */ 
-            text-align: center;   
-        }
-        & h5 {
-            text-align: center;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 25px; /* 166.667% */ 
-            opacity: 0.5;
-        }
-    }
-    & .basicPrice {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        & h4 {
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 48px; /* 120% */
-            letter-spacing: 4.167px;
-            text-transform: uppercase; 
-        }
-        & h5 {
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 25px; /* 166.667% */ 
-            opacity: 0.6;
-        }
-    }
-    & button {
-        background-color: black;
-        border: 0;
-        padding: 12px 37px;
-        & a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 2px; 
-            text-transform: uppercase; 
-        }
-    }
 }
+.basicSpecs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.basicSpecs h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px; /* 104.167% */ 
+    text-align: center;
+}
+.basicSpecs h5 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */ 
+    opacity: 0.5;
+}
+.basicPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.basicPrice h4 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    letter-spacing: 4.167px;
+    text-transform: uppercase;
+}
+.basicPrice h5 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */ 
+    opacity: 0.6;
+}
+.basicPlan button {
+    background-color: black;
+    border: 0;
+    padding: 12px 37px;
+}
+.basicPlan button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+}
+
 .basicPlanBlack {
     background-color: black;
-    & .blacked {
-        padding: 48px 21px;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    & .basicSpecs {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        & h4 {
-            color: #fff;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 25px; /* 104.167% */ 
-            text-align: center;   
-        }
-        & h5 {
-            color: #fff;
-            text-align: center;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 25px; /* 166.667% */ 
-            opacity: 0.5;
-        }
-    }
-    & .basicPrice {
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        & h4 {
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 48px; /* 120% */
-            letter-spacing: 4.167px;
-            text-transform: uppercase; 
-        }
-        & h5 {
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 25px; /* 166.667% */ 
-            opacity: 0.6;
-        }
-    }
-    & button {
-        background-color: #fff;
-        border: 0;
-        padding: 12px 37px;
-        & a {
-            color: black;
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 2px; 
-            text-transform: uppercase; 
-        }
-    }
 }
+
+.basicPlanBlack .blacked {
+    padding: 48px 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.basicPlanBlack .basicSpecs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.basicPlanBlack .basicSpecs h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px; /* 104.167% */
+    text-align: center;
+}
+
+.basicPlanBlack .basicSpecs h5 {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+    opacity: 0.5;
+}
+
+.basicPlanBlack .basicPrice {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basicPlanBlack .basicPrice h4 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    letter-spacing: 4.167px;
+    text-transform: uppercase;
+}
+
+.basicPlanBlack .basicPrice h5 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+    opacity: 0.6;
+}
+
+.basicPlanBlack button {
+    background-color: #fff;
+    border: 0;
+    padding: 12px 37px;
+}
+
+.basicPlanBlack button a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 .mobileCompare {
     padding-inline: 29px;
 }
+
 .bonusFooter {
     position: relative;
     z-index: 1;
-    & .bonusContent {
-        position: absolute;
-        top: 0;
+}
+
+.bonusFooter .bonusContent {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 66px;
+    padding-inline: 33px;
+    z-index: 3;
+}
+
+.bonus-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bonus-section h4 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+    letter-spacing: 3.333px;
+    text-transform: uppercase;
+}
+
+.bonus-section button {
+    background-color: transparent;
+    border: 0;
+}
+
+.bonus-section button a {
+    display: flex;
+    gap: 16px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+/*******************************************/
+/*RESPONSIVE TABLET*/
+@media (390px <= width <= 768px) {
+    .pricingInner {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .pricingTitle {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .mobileOneFeatures {
+        width: 64.5%;
+        max-width: 495px;
+    }
+    .pricing-girl {
+        width: 35.5%;
+        max-width: 273px;
+        object-fit: cover;
+    }
+    .featuresTextDetails {
+        padding-inline: 54px;
+    }
+    .priceTables {
+        align-items: center;
+        width: 100%;
+        max-width: 768px;
+    }
+    .basicPlan {
+        flex-direction: row;
+        gap: 61px;
+        justify-content: space-around;
+    }
+    .mobile-button {display: none;}
+    .basicSpecs {
+        width: 40%;
+        max-width: 278px;
+        gap: 18px;
+    }
+    .tab-desk-button {
+        display: block;
+    }
+    .basicPlanBlack {
+        width: 100%;
+        max-width: 768px;
+    }
+    .basicPlanBlack .blacked {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .basicPlanBlack .basicSpecs {
+        gap: 18px;
+    }
+    .mobile-compare-table {
+        display: none;
+    }
+    .tab-desktop {
         display: flex;
         flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        gap: 66px;
-        padding-inline: 33px;
-        z-index: 3;
+        gap: 64px;
+        width: 90%;
+        max-width: 689px;
+        margin: 0 auto;
     }
-    & span {
+    .tab-desktop h4 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 4.167px;
+        text-transform: uppercase;
+    }
+    .bonusFooter {
+        width: 100%;
+        max-width: 768px;
+        max-height: 280px;
+    }
+    .bonusFooter span{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .bonus-bg {
+        display: none;
+    }
+    .bonus-bg-tab-desk {
+        display: block;
+        width: 100%;
+        max-width: 768px;
+        height: 280px;
+    }
+    .yearlyPriceSection, .monthlyPriceSection {
+        width: 100%;
+    }
+}
+@media (min-width: 769px) {
+    .pricingInner {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .pricingTitle {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 690px;
+        
+    }
+    .mobileOneFeatures {
+        width: 42%;
+        max-width: 610px;
+        height: auto;
+    }
+    .pricing-girl {
+        width: 70%;
+        max-width: 1000px;
+        object-fit: cover;
+    }
+    .featuresTextDetails {
+        padding: 173px 111px;
+    }
+    .featuresTextDetails h4 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px; /* 120% */
+        letter-spacing: 4.167px;
+        white-space: nowrap;
+    }
+    .priceTables {
+        align-items: center;
+        width: 100%;
+        max-width: 1440px;
+    }
+    .priceSwitcher:hover {
+        cursor: url(/assets/images/pointer.svg), auto;
+    }
+    .yearlyPriceSection, .monthlyPriceSection {
+        width: 100%;
+    }
+    .basicPlan {
+        flex-direction: row;
+        gap: 75px;
+        justify-content: space-around;
+    }
+    .mobile-button {display: none;}
+    .basicSpecs {
+        width: 40%;
+        max-width: 278px;
+        gap: 22px;
+    }
+    .tab-desk-button {
+        display: block;
+    }
+    .basicPlanBlack {
+        width: 100%;
+        max-width: 1440px;
+    }
+    .basicPlanBlack .blacked {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .basicPlanBlack .basicSpecs {
+        gap: 18px;
+    }
+    .mobile-compare-table {
+        display: none;
+    }
+    .tab-desktop {
         display: flex;
         flex-direction: column;
-        gap: 24px;
-        & h4 {
-            color: #fff;
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 40px; /* 125% */
-            letter-spacing: 3.333px;
-            text-transform: uppercase; 
-        }
-        & button {
-            background-color: transparent;
-            border: 0;
-            & a {
-                display: flex;
-                gap: 16px;
-                text-decoration: none;
-                color: #fff;
-                text-transform: uppercase;
-                font-size: 12px;
-                font-weight: 700;
-                line-height: normal;
-                letter-spacing: 2px; 
-            }
-        }
+        gap: 64px;
+        width: 100%;
+        max-width: 731px;
+        margin: 0 auto;
     }
-  } 
+    .tab-desktop h4 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 4.167px;
+        text-transform: uppercase;
+    }
+    .bonusFooter {
+        width: 100%;
+        max-width: 1440px;
+        max-height: 280px;
+    }
+    .bonus-bg {
+        display: none;
+    }
+    .bonus-bg-tab-desk {
+        display: block;
+        width: 100%;
+        max-width: 1440px;
+        max-height: 280px;
+    }
+    .bonus-section{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 100%;
+    }
+
+}

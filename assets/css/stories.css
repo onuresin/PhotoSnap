@@ -140,6 +140,7 @@
 /*******************************************/
 /*RESPONSIVE TABLET*/
 @media (400px <= width <= 768px) {
+
     .sMobil, .mobileStory {
         display: none;
     }
@@ -180,6 +181,7 @@
 /************************************************/
 /*RESPONSIVE WEB*/
 @media (min-width:769px) {
+
     .sMobil, .mobileStory {
         display: none;
     }
