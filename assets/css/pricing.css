@@ -1,8 +1,13 @@
 .pricingInner {
     width: 100%;
-    max-width: 375px;
+    max-width: 399px;
     margin: 0 auto;
 }
+.pricingTitle {
+  width: 100%;
+  max-width: 399px;  
+}
+.pricing-girl, .bonus-bg {width: 100%;}
 .mobileOneFeatures {
     background-color: black;
     display: flex;
@@ -267,7 +272,7 @@
 
 /*******************************************/
 /*RESPONSIVE TABLET*/
-@media (390px <= width <= 768px) {
+@media (400px <= width <= 768px) {
     .pricingInner {
         max-width: 768px;
         margin: 0 auto;
@@ -275,6 +280,8 @@
     .pricingTitle {
         display: flex;
         flex-direction: row-reverse;
+        width: 100%;
+        max-width: 768px;
     }
     .mobileOneFeatures {
         width: 64.5%;
@@ -368,7 +375,7 @@
         display: flex;
         flex-direction: row-reverse;
         height: 690px;
-        
+        max-width: 1440px;
     }
     .mobileOneFeatures {
         width: 42%;
@@ -396,7 +403,7 @@
         max-width: 1440px;
     }
     .priceSwitcher:hover {
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(../images/pointer.svg), auto;
     }
     .yearlyPriceSection, .monthlyPriceSection {
         width: 100%;

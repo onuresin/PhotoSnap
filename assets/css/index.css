@@ -11,13 +11,13 @@ body, html {
 /*MOBILE TASARIM KODLARI*/
 .homeInner {
     width: 100%;
-    max-width:  375px;
+    max-width:  399px;
     margin: 0 auto;
 }
 /*HEADER SECTION*/
 .header {
     width: 100%;
-    max-width: 375px;
+    max-width: 399px;
     display: flex;
     padding: 28px 24px;
     justify-content: space-between;
@@ -61,6 +61,8 @@ body, html {
     z-index: 999;
     top: 0;
     left: 0;
+    width: 100%;
+    max-width: 399px;
 } 
 .modal.active {
     display: flex;
@@ -115,7 +117,7 @@ body, html {
 }
 .detailSection {
     width: 100%;
-    max-width: 375px;
+    max-width: 399px;
     margin: 0 auto;
 }
 .mobileOneText {
@@ -220,10 +222,14 @@ body, html {
   background-color: #fff;
   opacity: 0.2;
 }
+.mobileSet {
+    width: 100%;
+}
 /******************/
 /**SPEC SECTION**/
 .specSection {
     width: 100%;
+    max-width: 399px;
 }
 .specTop {
     display: flex;
@@ -286,7 +292,7 @@ body, html {
 /*limitsEmbedSection*/
 .limitsEmbedSection {
     width: 100%;
-    max-width: 375px;
+    max-width: 399px;
     margin: 0 auto;
 }
 .embedInner {
@@ -327,7 +333,7 @@ body, html {
 /*FOOTER SECTION*/
 .footerSection {
     width: 100%;
-    max-width: 375px;
+    max-width: 399px;
     display: flex;
     flex-direction: column;
     gap: 119px;
@@ -584,10 +590,10 @@ body {background-color: #f1f1f1;}
     .hamburger, .tabletSet, .mobileSet, .footerLinks{display: none;}
     .headerNavigatorResponsive, .navigatorResponsive, .webSet, .footerLinksWeb { display: block;}
     .headerNavigatorResponsive {
-    display: flex;
-    gap: 37px;
-    align-items: center;
-    margin-left: 41px;
+        display: flex;
+        gap: 37px;
+        align-items: center;
+        margin-left: 41px;
     }
     .headerNavigatorResponsive a {
         color: black;
@@ -599,7 +605,7 @@ body {background-color: #f1f1f1;}
         text-transform: uppercase;    
     }
     .headerNavigatorResponsive a:hover {
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(../images/pointer.svg), auto;
         opacity: 0.3;
     }
     .navigatorResponsive button {
@@ -621,17 +627,17 @@ body {background-color: #f1f1f1;}
     .navigatorResponsive button:hover {
         transition: linear 0.3s;
         background-color: #DFDFDF;
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(../images/pointer.svg), auto;
     }
     .navigatorResponsive button:hover a {
         color: black;
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(../images/pointer.svg), auto;
     }
     .navigatorResponsive button:active {
         transform: translateY(4px);
     }
     .header a:hover{
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(../images/pointer.svg), auto;
     }
       /***********HEADER END**********/
     .detailSection {
@@ -682,7 +688,7 @@ body {background-color: #f1f1f1;}
         transform: translateY(3px);
     }
     .getLink a:hover {
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(../images/pointer.svg), auto;
         border-bottom: 1px solid #FFFFFF;
         transition: ease-out 2s;
     }
@@ -690,7 +696,7 @@ body {background-color: #f1f1f1;}
         transform: translateY(3px);
     }
     .getLinkWhite a:hover {
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(assets/images/pointer.svg), auto;
         border-bottom: 1px solid black;
     }
     .detailMobileTwo {
@@ -724,6 +730,7 @@ body {background-color: #f1f1f1;}
     .specSection {
         display: flex;
         flex-direction: row;
+        max-width: 1440px;
     }
     .specTop, .specBot {
         display: flex;
@@ -731,16 +738,13 @@ body {background-color: #f1f1f1;}
     }
     .mobileTopContent {display: none;}
     .tabletTopContent {display: block;}
-    .contentbtn {
-        white-space: nowrap;
-    }
     .topContent:hover {
         transition: ease 1.5s;
         transform: translateY(-20px);
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(../images/pointer.svg), auto;
     }
     .topContent:hover a {
-        cursor: url(/assets/images/pointer.svg), auto
+        cursor: url(../images/pointer.svg), auto
     }
     .webLinear {
         display: block;
@@ -758,6 +762,7 @@ body {background-color: #f1f1f1;}
         gap: 30px;
     }
     .footerSection {
+        width: 100%;
         max-width: 1440px;
         flex-direction: row;
         padding: 64px 165px;
@@ -802,7 +807,7 @@ body {background-color: #f1f1f1;}
     }
 
     .socialMedia li a:hover {
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(../images/pointer.svg), auto;
     }
     .footerLinksWeb {
         margin-left: -100px;
@@ -825,7 +830,7 @@ body {background-color: #f1f1f1;}
     }
     .footerLinksWeb a:hover {
         opacity: 0.4;
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(../images/pointer.svg), auto;
     }
     .fbotSection {
         margin-left: 262px;
@@ -838,7 +843,7 @@ body {background-color: #f1f1f1;}
         border-bottom: 1px solid transparent;
     }
     .linkFooter a:hover {
-        cursor: url(/assets/images/pointer.svg), auto;
+        cursor: url(../images/pointer.svg), auto;
         border-bottom: 1px solid #fff;
     }
 }
